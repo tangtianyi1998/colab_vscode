@@ -1,7 +1,7 @@
 #!/bin/bash
 
-export PYTORCH_PRETRAINED_BERT_CACHE="/home/taida-tty/colab_vscode/data/bert_cache"
-GLOVE_PATH="/home/taida-tty/glove.840B.300d.txt"
+# export PYTORCH_PRETRAINED_BERT_CACHE="./data/bert_cache"
+GLOVE_PATH="~/.glove.840B.300d.txt"
 echo 'Note: this script should be called from the root of the repository' >&2
 SAVE_DIR="./save_dir"
 
@@ -16,7 +16,7 @@ SEED=1111
 # python ipdb sentbias/main.py --log_file ${SAVE_DIR}/log.log -t ${TESTS} -m bert --bert_version large --exp_dir ${SAVE_DIR} --data_dir tests/ --glove_path ${GLOVE_PATH} --combine_method max 
 
 # BoW (consumes GloVe method)
-# python sentbias/main.py --log_file ${SAVE_DIR}/log.log -t ${TESTS} --exp_dir ${SAVE_DIR} --data_dir tests/ -m bow --glove_path ${GLOVE_PATH} -s ${SEED} --ignore_cached_encs
+python sentbias/main.py --log_file ${SAVE_DIR}/log.log -t ${TESTS} --exp_dir ${SAVE_DIR} --data_dir tests/ -m bow --glove_path ${GLOVE_PATH} -s ${SEED} --ignore_cached_encs
 
 # SkipThoughts
 
