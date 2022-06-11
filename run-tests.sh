@@ -41,6 +41,6 @@ python sentbias/main.py --log_file ${SAVE_DIR}/log.log -t ${TESTS} --exp_dir ${S
 
 # BERT
 # export PYTORCH_PRETRAINED_BERT_CACHE=/data/bert_cache
-python sentbias/main.py --log_file ${SAVE_DIR}/log.log -t ${TESTS} -m bert --bert_version "bert-large-uncased" --exp_dir ${SAVE_DIR} --data_dir tests/ --glove_path ${GLOVE_PATH} -s ${SEED} --ignore_cached_encs
-python sentbias/main.py --log_file ${SAVE_DIR}/log.log -t ${TESTS} -m bert --bert_version "bert-base-uncased" --exp_dir ${SAVE_DIR} --data_dir tests/ --glove_path ${GLOVE_PATH} -s ${SEED} --ignore_cached_encs
+# python sentbias/main.py --log_file ${SAVE_DIR}/log.log -t ${TESTS} -m bert --bert_version "bert-large-uncased" --exp_dir ${SAVE_DIR} --data_dir tests/ --glove_path ${GLOVE_PATH} -s ${SEED} --ignore_cached_encs
+# python sentbias/main.py --log_file ${SAVE_DIR}/log.log -t ${TESTS} -m bert --bert_version "bert-base-uncased" --exp_dir ${SAVE_DIR} --data_dir tests/ --glove_path ${GLOVE_PATH} -s ${SEED} --ignore_cached_encs
 
