@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # export PYTORCH_PRETRAINED_BERT_CACHE="./data/bert_cache"
-GLOVE_PATH="~/.glove.840B.300d.txt"
+GLOVE_PATH="/content/colab_vscode/glove.840B.300d.txt"
 echo 'Note: this script should be called from the root of the repository' >&2
 SAVE_DIR="./save_dir"
 
